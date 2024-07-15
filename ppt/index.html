@@ -17,10 +17,23 @@
             font-weight: 400;
         }
         .container{
-            margin: 10%;
+            margin: 3% 10%;
+            display: flex;
+            flex-wrap: wrap;
         }
-        .h-2{
-            margin-top: 100px;
+        .child{
+            text-align: center;
+            width: 300px;
+            border: 1px solid lightgray;
+            border-radius: 5px;
+            padding: 30px 30px;
+            margin: 30px;
+        }
+        img{
+            width: 100px;
+        }
+        .ch-3{
+            flex-flow: 3;
         }
         a{
             text-decoration: none;
@@ -33,6 +46,10 @@
             border: 1px solid darkorange;
         }
         .btn-2{
+            border: 1px solid red;
+            background-color: red;
+        }
+        .btn-3{
             background-color: dodgerblue;
             border: 1px solid dodgerblue;
         }
@@ -41,6 +58,10 @@
             background-color: rgb(255, 72, 0);
         }
         .btn-2:hover{
+            border: 1px solid rgb(156, 10, 10);
+            background-color: rgb(156, 10, 10);
+        }
+        .btn-3:hover{
             border: 1px solid rgb(8, 41, 75);
             background-color: rgb(8, 41, 75);
         }
@@ -48,12 +69,26 @@
 </head>
 <body>
     <div class="container">
-        <h3 class="h-1">Presentation</h3>
-        <p>Click below the button Download <br>Powerpoint Presentation file</p>
-        <a href="File_Menagment_[21CSE01]_Animated.odp" download="File_Menagment_[21CSE01]_Animated.odp" class="btn-1">Download</a>
-        <h3 class="h-2">ProjectMini</h3>
-        <p>Click below the button Download <br>ProjectMini from program 'C'</p>
-        <a href="projectMini.c" download="projectMini.c" class="btn-2">Download</a>
+        <div class="child c-1">
+            <img src="ppt.png" alt="">
+            <h3 class="h-1">Presentation</h3>
+            <p>Click below the button Download Powerpoint Presentation file</p>
+            <a href="File_Menagment_[21CSE01]_Animated.odp" download="File_Menagment_[21CSE01]_Animated.odp" class="btn-1">Download</a>
+        </div>
+
+        <div class="child c-2">
+            <img src="pdf.png" alt="">
+            <h3 class="h-2">Presentation PDF</h3>
+            <p>Click below the button Download PPT file PDF format</p>
+            <a href="File_Menagment_[21CSE01].pdf" download="File_Menagment_[21CSE01]_Animated.odp" class="btn-2">Download</a>
+        </div>
+
+        <div class="child c-3">
+            <img src="c.png" alt="">
+            <h3 class="h-3">ProjectMini</h3>
+            <p>Click below the button Download ProjectMini from program 'C'</p>
+            <a href="projectMini.c" download="projectMini.c" class="btn-3">Download</a>
+        </div>
     </div>
 </body>
 </html>
